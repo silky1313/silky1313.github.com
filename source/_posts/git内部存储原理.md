@@ -1,5 +1,8 @@
 ---
 title: git内部存储原理
+date: 2024-06-10 13:47:40
+categories: 
+- git
 ---
 cs61b的一个实验是mini-git，借此看看git内部是如何存储数据的。
 # Git对象
