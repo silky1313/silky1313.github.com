@@ -220,7 +220,7 @@ int dictRehash(dict *d, int n) {
 
 而这个函数的调用者是`_dictRehashStep`, `_dictRehashStep`的调用者则是`dictAddRaw，dictGenericDelete，dictFind，dictGetRandomKey`, 也就是每次对哈希表的查询或修改操作执行一个bucket的迁移。
 
-但是现在存在一个小问题，如果一直没有访问，迁移就不执行了吗？目前而言好像确实是这样的，但是这样数据不是存在两份，内存占用不是会变多吗？redis能忍受这样的内存浪费吗？已提(issue)[https://github.com/redis/redis/issues/13605], 到时候看看后续。
+但是现在存在一个小问题，如果一直没有访问，迁移就不执行了吗？目前而言好像确实是这样的，但是这样数据不是存在两份，内存占用不是会变多吗？redis能忍受这样的内存浪费吗？已提[issue](https://github.com/redis/redis/issues/13605), 到时候看看后续。
 
 
 
