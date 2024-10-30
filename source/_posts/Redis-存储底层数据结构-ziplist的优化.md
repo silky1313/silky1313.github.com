@@ -3,7 +3,7 @@ title: Redis-存储底层数据结构-ziplist的优化
 date: 2024-10-30 23:11:00
 categories: 
 - redis
-----
+---
 
 # ziplist的缺点
 我们都知道ziplist的插入效率其实是$o(n)$的，redis的解决方案是ziplist不可太长。使用到ziplist的两个上层数据结构分别是dict和zset，其二者有配置`hash-max-ziplist-entries`和`zset-max-ziplist-entries`来限制其在底层存储是ziplist状态下的长度。

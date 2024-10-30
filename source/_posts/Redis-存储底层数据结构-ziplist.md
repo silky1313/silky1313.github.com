@@ -3,7 +3,7 @@ title: Redis-存储底层数据结构-ziplist
 date: 2024-10-28 23:07:00
 categories: 
 - redis
-----
+---
 
 # ziplist.c的开头注释
 这一段注释大概解析了一下ziplist基本构成。
